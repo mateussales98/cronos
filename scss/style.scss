@@ -1,0 +1,189 @@
+// Reset + Geral =======================
+
+body,
+html,
+h1,
+h2,
+h3,
+p {
+  margin: 0px;
+  padding: 0px;
+}
+
+ul,
+li {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body,
+p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: .8rem;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: #222;
+  overflow-y: hidden;
+
+}
+
+button{
+  border: 0;
+}
+
+.hidden{
+  display: none;
+  opacity: 0;
+  z-index: -1;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1170px;
+
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+// Header =======================
+
+.header {
+
+  border-bottom: 0.1rem solid white;
+  background: #222;
+
+
+  .logo {
+      img {
+        width: 36px;
+    }
+  }
+
+  .menu {
+    flex: 1;
+    align-items: center;
+
+    .menu-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+
+      .menu-item {
+        margin: 1rem;
+
+        a {
+          font-size: 1rem;
+          font-weight: bold;
+          display: block;
+          padding: 10px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+// Main =======================
+
+.main {
+  min-height: 568px;
+  background: #222;
+
+  .container {
+    flex-direction: column;
+    height: 500px;
+  }
+
+  .timer {
+    margin:  0px;
+    font-weight: lighter;
+    color: white;
+  }
+
+  .sub-timer {
+    font-weight: lighter;
+    color: white;
+  }
+
+  .buttons {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px 15px;
+    justify-content: space-around;
+  }
+
+  .btn {
+    flex: 1;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding: 10px ;
+    background: rgb(0, 140, 255);
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .7rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin: 20px;
+  }
+
+  .stop{
+    background: rgb(255, 60, 60) ;
+  }
+
+  .reset{
+    background: #333 ;
+  }
+}
+
+// Pop Up =======================
+
+.pop-up{
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.7);
+  position: fixed;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-box{
+  width: 48vw;
+  background-color: rgb(127, 208, 255);
+  border-radius: 16px;
+  padding: calc(1rem + 10px);
+
+  p{
+    margin: 10px 0px 0px 0px;
+  }
+}
+
+// Footer =======================
+
+.footer {
+  background: #222;
+
+  P {
+    font-size: .5rem;
+    color: white;
+
+    a {
+      color: white;
+      font-style: italic;
+    }
+  }
+}

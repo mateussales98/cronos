@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crônometro | by Mateussales98</title>
+  <link rel="stylesheet" href="./scss/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <img src="./img/timer.svg" alt="">
+        <a href="#"></a>
+      </div>
+      <nav class="menu">
+        <ul class="menu-list">
+          <li class="menu-item"><a href="#" onclick="Modal.toogle(popup)">Info</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <div class="container">
+      <h1 class="timer">00:00.00</h1>
+      <div class="buttons">
+        <button class="btn start" onclick="Cronos.start()">Start</button>
+        <button class="btn stop hidden "  onclick="Cronos.stop()">Stop</button>
+        <button class="btn resume hidden " onclick="Cronos.resume()">Resume</button>
+        <button class="btn reset hidden "onclick="Cronos.reset()">Reset</button>
+      </div>
+    </div>
+
+    <div class="pop-up hidden" onclick="Modal.toogle(popup)">
+      <div class="info-box ">
+        <h4>INFORMATIONS:</h4>
+        <p>
+          This website was build to practicing the technologies: HTML, SASS, JS.
+        </p>
+        <p>
+          The site is only timer. The layout was inspired in the timer of my smartphone with some modifications.
+        </p>
+        <p>
+          Click in any place to exit.
+        </p>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <p>Timer build by <a href="https://github.com/mateussales98/" target="_blank" rel="referrer">@mateussales98</a></p>
+    </div>
+  </footer>
+  
+  
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
